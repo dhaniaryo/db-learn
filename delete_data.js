@@ -19,16 +19,22 @@ const fruitSchema = new mongoose.Schema(
 
 const Fruit = mongoose.model("Fruit", fruitSchema);
 
-Fruit.deleteOne({
-        _id: '61229d5ee9cc2126940b92fb'
-    }, function(error){
-        if(error){
-            console.log(error);
-        } else {
-            console.log(`Delete data is success`);
-        }
-    }
-);
+Fruit.deleteMany().then(function(){
+    console.log("Delete all data success!");
+}).catch(function(error){
+    console.log(error);
+});
+
+// Fruit.deleteOne({
+//         _id: '61229d5ee9cc2126940b92fb'
+//     }, function(error){
+//         if(error){
+//             console.log(error);
+//         } else {
+//             console.log(`Delete data is success`);
+//         }
+//     }
+// );
 
 Fruit.find(function(error, fruits){
     if(error){
