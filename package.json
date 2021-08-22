@@ -1,0 +1,14 @@
+{
+  "name": "mongo-basic",
+  "version": "1.0.0",
+  "description": "This Project is used to learn about mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dhaniaryo.yp@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.13.7"
+  }
+}
