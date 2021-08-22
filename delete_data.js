@@ -36,14 +36,14 @@ Fruit.deleteMany().then(function(){
 //     }
 // );
 
-Fruit.find(function(error, fruits){
-    if(error){
-        console.log(error);
-    } else {
-        mongoose.connection.close();
-        console.log('Remaining data after deletion');
-        fruits.forEach(function(fruit){
-            console.log(fruit.name)
-        });
-    }
-});
+// Fruit.find(function(error, fruits){
+//     if(error){
+//         console.log(error);
+//     } else {
+//         mongoose.connection.close();
+//         console.log('Remaining data after deletion');
+//         fruits.forEach(function(fruit){
+//             console.log(fruit.name)
+//         });
+//     }
+// });
