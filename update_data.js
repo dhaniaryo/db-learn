@@ -39,7 +39,7 @@ Fruit.find(function(error, fruits){
         console.log(error);
     } else {
         mongoose.connection.close();
-        // console.log(fruits);
+        console.log('Remaining data after updating');
         fruits.forEach(function(fruit){
             console.log(fruit.name)
         });
